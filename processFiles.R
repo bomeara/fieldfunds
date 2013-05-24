@@ -22,17 +22,20 @@ SaveImage("AssetsVsInvestment", export.type)
 x <- money$investment_return/1e6
 y <- (money$net_assets_ending-money$net_assets_beginning)/1e6
 plot(x, y, bty="n", xlab="Investment return ($M)", ylab="Net asset growth ($M)", pch=16, asp=1, col=ifelse(y<0, "red", "black")) 
+model<-lm(y~x)
+lines(x=range(x), y=predict(model, newdata=data.frame(x=range(x))), lty="dashed")
 abline(h=0, lty="dotted")
 abline(v=0, lty="dotted")
-abline(a=0, b=1, lty="dashed")
+#abline(a=0, b=1, lty="dashed")
 thigmophobe.labels(x,y,money$year,col=ifelse(y<0, "red", "black")) 
+text(x=-75, y=predict(model, newdata=data.frame(x=-75)), labels=paste("$1 more in investment returns results in \n$", round(model$coefficients[2], 2), " more in net growth", sep=""), srt=atan(model$coefficients[2])/pi*180.0, cex=0.7, pos=1)
+
 dev.off()
 
 SaveImage("GrowthResidualsVsMuseumResearchEtc", export.type)
 x <- abs(money$collections_research + money$conservation + money$exhibitions + money$education)/1e6
 y <- (money$net_assets_ending - money$net_assets_beginning - money$investment_return - money$rate_swaps)/1e6
 plot(x, y, bty="n", xlab="Spending on collections, research,\nconservation, exhibitions, and education ($M)", ylab="Net asset growth NOT explained by investments or rate swaps ($M)", pch=16, col=ifelse(y<0, "red", "black"))
-abline(h=0, lty="dotted")
 thigmophobe.labels(x,y,money$year,col=ifelse(y<0, "red", "black")) 
 dev.off()
 
