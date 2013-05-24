@@ -7,7 +7,7 @@ Percent change in funding:
 [![Percent change in funding](https://github.com/bomeara/fieldfunds/blob/master/PercentSpendingChange.png?raw=true)](#percentchange)
 
 Effect of investment returns:
-[![Investment returns](https://github.com/bomeara/fieldfunds/blob/master/AssetsVsInvestment.png.png?raw=true)](#investment)
+[![Investment returns](https://github.com/bomeara/fieldfunds/blob/master/AssetsVsInvestment.png?raw=true)](#investment)
 The Field Museum budget has many costs (education, collections, cost to get donors, etc.) and inputs (grants, sponsorships, admissions, etc.). This plot suggests that much of the growth or decline of net assets is being driven by investment returns.
 
 
