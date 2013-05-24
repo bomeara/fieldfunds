@@ -6,11 +6,11 @@ money <- apply(money, 2, as.numeric)
 money <- data.frame(t(money))
 colnames(money) <- data$ShortName
 
-export.type <- "pdf"
+export.type <- "png"
 
 SaveImage <- function(name, export.type) {
   if (export.type=="png") {
-    png(file=paste(name, export.type, sep="."), width=580, height=580)
+    png(file=paste(name, export.type, sep="."), width=700, height=700)
   }
   if (export.type=="pdf") {
     pdf(file=paste(name, export.type, sep="."), width=6, height=6)
@@ -65,7 +65,7 @@ for (col.index in sequence(length(cols2plot))) {
    }
    label.text[col.index]<-paste(gsub("_","&",cols2plot[col.index]), round(y[length(y)],1), "%")
 }
-thigmophobe.labels(rep(max(money$year), length(cols2plot)), label.pos, labels=label.text, text.pos=4,  col=mypalette)
+thigmophobe.labels(rep(max(money$year), length(cols2plot)), label.pos, labels=label.text, text.pos=4,  col=mypalette, cex=1.2)
 abline(h=0, lty="dotted")
 dev.off()
 
