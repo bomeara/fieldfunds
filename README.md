@@ -1,10 +1,12 @@
 fieldfunds
 ==========
 
-Contains public financial info from the Field Museum in a more usable form. I also include sample code to parse the information and do a few plots. Some sample plots (I'm hoping others will do better):
+Contains public financial info from the Field Museum in a more [usable form](https://raw.github.com/bomeara/fieldfunds/master/FieldMuseum.txt) . I also include sample code to parse the information and do a few plots. Some sample plots (I'm hoping others will do better):
 
 *Percent change in funding:*
 [![Percent change in funding](https://github.com/bomeara/fieldfunds/blob/master/PercentSpendingChange.png?raw=true)](#percentchange)
+
+
 
 *Effect of investment returns:*
 [![Investment returns](https://github.com/bomeara/fieldfunds/blob/master/AssetsVsInvestment.png?raw=true)](#investment)
