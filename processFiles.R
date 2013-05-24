@@ -10,7 +10,7 @@ export.type <- "pdf"
 
 SaveImage <- function(name, export.type) {
   if (export.type=="png") {
-    png(file=paste(name, export.type, sep="."), width=480, height=480)
+    png(file=paste(name, export.type, sep="."), width=580, height=580)
   }
   if (export.type=="pdf") {
     pdf(file=paste(name, export.type, sep="."), width=6, height=6)
