@@ -16,11 +16,11 @@ Highlights include the growth of marketing (costing over twice as much as in 200
 *Effect of investment returns:*
 [![Investment returns](https://github.com/bomeara/fieldfunds/blob/master/AssetsVsInvestment.png?raw=true)](#investment)
 
-The Field Museum budget has many costs (education, collections, cost to get donors, etc.) and inputs (grants, sponsorships, admissions, etc.). This plot suggests that much of the growth or decline of net assets is being driven by investment returns.
+The Field Museum budget has many costs (education, collections, cost to get donors, etc.) and inputs (grants, sponsorships, admissions, etc.). This plot suggests that much of the growth or decline of net assets is being driven by investment returns. Note that red shows the years where assets decreased.
 
 
 *Effect of marketing (linear regression)*
 [![Marketing impact](https://github.com/bomeara/fieldfunds/blob/master/MarketingImpact.png?raw=true)](#marketing)
 
-This suggests that marketing doesn't pay off well, but note this doesn't control for other factors; maybe more marketing makes the losses less bad in down years, for example.
+This suggests that marketing doesn't pay off well, but note this doesn't control for other factors; maybe more marketing makes the losses less bad in down years, for example. Red shows years where assets decreased.
 
